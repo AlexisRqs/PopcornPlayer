@@ -1,4 +1,4 @@
-import './footer.css';
+import './Footer.css';
 import Logo from '../../assets/logo_PopCorn.svg';
 
 export default function Footer(){
