@@ -5,8 +5,8 @@ import HomePage from './components/pages/HomePage';
 import FilmCategoriesPage from './components/pages/FilmsCategoriesPage';
 import FilmPage from './components/pages/FilmPage';
 import SearchPage from './components/pages/SearchPage';
-import Banner from "./components/Banner1";
-import NavBar from "./components/NavBar1";
+import Banner from "./components/Banner";
+import NavBar from "./components/NavBar";
 
 function App() {
     return (
