@@ -1,6 +1,6 @@
 import './Banner.css';
 import Logo from '../../assets/logo_PopCorn.svg';
-import SearchBar from '../SearchBar';
+import SearchBar from "../SearchBar1";
 
 export default function Banner(){
     return(
