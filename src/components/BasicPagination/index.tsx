@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 export default function BasicPagination(props: any) {
     const [page, setPage] = React.useState(1);
 
+    console.log(props.numberPage)
+
     const handlePage = (event: React.ChangeEvent<unknown>, value: number) => {
         props.page(value);
         setPage(value);
@@ -12,7 +14,7 @@ export default function BasicPagination(props: any) {
 
     return (
         <Box sx={{display: 'flex', justifyContent: 'center', margin: 5}}>
-            <Pagination count={10} page={page} onChange={handlePage}/>
+            <Pagination count={props.numberPage} page={page} onChange={handlePage}/>
         </Box>
     );
 }

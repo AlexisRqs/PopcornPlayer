@@ -7,12 +7,13 @@ import FilmPage from './components/pages/FilmPage';
 import SearchPage from './components/pages/SearchPage';
 import Footer from './components/Footer';
 import NavBar from "./components/NavBar";
+import Banner from './components/Banner';
 
 function App() {
     return (
         <Router>
             <NavBar/>
-
+            <Banner/>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/categories" element={<FilmCategoriesPage/>}/>

@@ -39,7 +39,7 @@ const HomePage = () => {
             <CssBaseline/>
             <Container>
                 <MoviesList movies={movies}/>
-                <BasicPagination page={handlePage}/>
+                <BasicPagination page={handlePage} numberPage={movies?.total_pages}/>
             </Container>
         </>
     );

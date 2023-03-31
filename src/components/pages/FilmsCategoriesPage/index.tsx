@@ -4,7 +4,7 @@ import Banner from '../../Banner';
 const FilmCategoriesPage = () => {
     return (
         <Box>
-                 <Banner/>
+        
         </Box>
     );
 };
