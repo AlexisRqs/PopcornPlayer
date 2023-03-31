@@ -2,15 +2,15 @@ import './Banner.css';
 import Logo from '../../assets/logo_PopCorn.svg';
 import SearchBar from "../SearchBar1";
 
-export default function Banner(){
-    return(
+export default function Banner() {
+    return (
         <>
             <section className="Banner">
-               <img src={Logo} alt='logo'/>
-               <div>
-                 <SearchBar/>
-               </div>
-               
+                <img src={Logo} alt='logo'/>
+                <div>
+                    <SearchBar/>
+                </div>
+
             </section>
         </>
     )

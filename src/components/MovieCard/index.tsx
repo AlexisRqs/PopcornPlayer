@@ -2,11 +2,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 interface Movie {
     adult: boolean
-    backdrop_path: string 
+    backdrop_path: string
     genre_ids: number[]
     id: number
     original_language: string
@@ -22,29 +22,29 @@ interface Movie {
 }
 
 interface MovieCardProps {
-    movie: Movie ;
-  }
-  
+    movie: Movie;
+}
 
-export default function MovieCard({ movie }: MovieCardProps) {
+
+export default function MovieCard({movie}: MovieCardProps) {
     const {title, overview, poster_path, id} = movie;
     const navigate = useNavigate();
 
     return (
-        <Card sx={{ maxWidth: 345, cursor: 'pointer' }} onClick={() =>navigate(`/movies/${id}`)} >
-        <CardMedia
-            sx={{ height: 500 }}
-            image={`https://image.tmdb.org/t/p/w500/${poster_path}`}
-            title={title}
-        />
-        <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-            {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            {overview}
-            </Typography>
-        </CardContent>
+        <Card sx={{maxWidth: 345, cursor: 'pointer'}} onClick={() => navigate(`/movies/${id}`)}>
+            <CardMedia
+                sx={{height: 500}}
+                image={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+                title={title}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {overview}
+                </Typography>
+            </CardContent>
         </Card>
     );
 }
