@@ -6,3 +6,8 @@ InputBase {
 Button {
     border-radius: 20px;
 }
+
+.ListItem:hover {
+    background-color: #18293b;
+    color: WHITE;
+}
